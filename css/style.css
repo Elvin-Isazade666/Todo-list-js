@@ -1,0 +1,88 @@
+/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+/* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    padding: 25px;
+}
+.wrapper h1{
+    font-weight: 700;
+}
+.wrapper form{
+    display: flex;
+    gap: 5px;
+}
+.wrapper form input{
+    width: 100%;
+    font-size: 21px;
+    padding-left: 9px;
+    border-radius: 3px;
+}
+.wrapper form .add{
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+.wrapper .add-list{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 30px;
+}
+.wrapper .add-list .beatiful-text{
+    background-color: gainsboro;
+    border-bottom: 1px solid black;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.wrapper .add-list .beatiful-text.del{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.wrapper .add-list .beatiful-text:hover .trash{
+    opacity: 1;
+}
+.wrapper .add-list .beatiful-text .check{
+    font-size: 19px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.wrapper .add-list .beatiful-text .trash{
+    font-size: 23px;
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    left: -22px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.wrapper .wrapper-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 29px;
+}
+.wrapper .wrapper-footer p{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.message{
+    color: red;
+    font-size: 14px;
+}
